@@ -1,0 +1,9 @@
+<a [routerLink]="{ cxRoute: 'cart'} | cxUrl">
+  <cx-icon [type]="iconTypes.CART"></cx-icon>
+  <span class="quantity" *ngIf="quantity$ | async as quantity">
+    {{quantity}}
+  </span>
+  <ul class="cart-preview" *ngIf="entries$ | async as entries">
+    <li *ngFor="let entry of entries">{{ entry.product.name}}</li>
+  </ul>
+</a>
