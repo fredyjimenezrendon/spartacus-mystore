@@ -1,0 +1,12 @@
+:host {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  background-color: var(--cx-background-color, var(--cx-color-dark));
+  color: white;
+  width: 250px;
+  height: 80px;
+  padding: 16px;
+  border-radius: 16px 0 0 0;
+  z-index: 2;
+}

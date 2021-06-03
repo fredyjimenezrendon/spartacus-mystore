@@ -4,6 +4,7 @@ import { WeatherWidgetComponent } from './weather-widget/weather-widget.componen
 import {WEATHER_NORMALIZER, WEATHER_SERIALIZER} from "./converters/weather-converter";
 import {WeatherNormalizer} from "./converters/weather-normalizer";
 import {WeatherSerializer} from "./converters/weather-serializer";
+import {WeatherStateModule} from "./store/weather-state/weather-state.module";
 
 
 
@@ -13,7 +14,8 @@ import {WeatherSerializer} from "./converters/weather-serializer";
         WeatherWidgetComponent
     ],
     imports: [
-        CommonModule
+        CommonModule,
+        WeatherStateModule
     ],
   providers: [
     {

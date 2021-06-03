@@ -4,10 +4,9 @@ import {Observable, of} from "rxjs";
 import {Weather} from "../models/Weather";
 import {environment} from "../../../../environments/environment";
 import {HttpClient, HttpParams} from "@angular/common/http";
-import {map, switchMap} from "rxjs/operators";
+import {switchMap} from "rxjs/operators";
 import {ConverterService} from "@spartacus/core";
 import {WEATHER_NORMALIZER, WEATHER_SERIALIZER} from "../converters/weather-converter";
-import {WeatherSerializer} from "../converters/weather-serializer";
 
 @Injectable({providedIn: 'root'})
 export class WeatherAdapter {

@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {Weather} from "../models/Weather";
 import {Observable} from "rxjs";
-import {WeatherConnector} from "../connectors/weather-connector";
+import {WeatherFacade} from "../facade/weather-facade";
 
 @Component({
   selector: 'app-weather-widget',
@@ -10,9 +10,9 @@ import {WeatherConnector} from "../connectors/weather-connector";
 })
 export class WeatherWidgetComponent implements OnInit {
 
-  weather$: Observable<Weather> = this.weatherConnector.getWeather();
+  weather$: Observable<Weather> = this.weatherFacade.getCurrentWeather();
 
-  constructor(private weatherConnector: WeatherConnector) { }
+  constructor(private weatherFacade: WeatherFacade) { }
 
   ngOnInit(): void {
   }

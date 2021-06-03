@@ -1,1 +1,16 @@
-<p>{{ weather$ | async | json}}</p>
+<ng-container class="weather-widget" *ngIf="weather$ | async as weather">
+
+  <div *ngIf="weather.status.loading">
+    Loading...
+  </div>
+
+  <div *ngIf="weather.status.success">
+    <b>Weather in {{weather.city}}</b>
+    <p>Temp:  {{weather.temperature}}C - hum {{weather.humidity}}%</p>
+  </div>
+
+  <div *ngIf="weather.status.error">
+    There were an error fetching the weather
+  </div>
+
+</ng-container>

@@ -10,6 +10,16 @@ import {MyMiniCartModule} from "./my-mini-cart/my-mini-cart.module";
 import {MyCartModule} from "./my-cart/my-cart.module";
 import {MyBannerModule} from "./my-banner/my-banner.module";
 import {WeatherModule} from "./features/weather/weather.module";
+import {StoreDevtoolsModule} from "@ngrx/store-devtools";
+import {environment} from "../environments/environment";
+
+const devImports = [];
+if (!environment.production) {
+  devImports.push(StoreDevtoolsModule.instrument({
+    maxAge: 50,
+    logOnly: environment.production
+  }));
+}
 
 @NgModule({
   declarations: [
@@ -26,7 +36,11 @@ import {WeatherModule} from "./features/weather/weather.module";
     MyMiniCartModule,
     MyCartModule,
     MyBannerModule,
-    WeatherModule
+    WeatherModule,
+
+    // Dev Imports
+    ...devImports,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
