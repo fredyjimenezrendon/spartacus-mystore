@@ -9,6 +9,7 @@ import {SpartacusModule} from './spartacus/spartacus.module';
 import {MyMiniCartModule} from "./my-mini-cart/my-mini-cart.module";
 import {MyCartModule} from "./my-cart/my-cart.module";
 import {MyBannerModule} from "./my-banner/my-banner.module";
+import {WeatherModule} from "./features/weather/weather.module";
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import {MyBannerModule} from "./my-banner/my-banner.module";
     BrowserTransferStateModule,
     MyMiniCartModule,
     MyCartModule,
-    MyBannerModule
+    MyBannerModule,
+    WeatherModule
   ],
   providers: [],
   bootstrap: [AppComponent]
