@@ -11,7 +11,9 @@
     "dev:ssr": "ng run mystore:serve-ssr",
     "serve:ssr": "node dist/mystore/server/main.js",
     "build:ssr": "ng build --prod && ng run mystore:server:production",
-    "prerender": "ng run mystore:prerender"
+    "prerender": "ng run mystore:prerender",
+    "start": "node server.js",
+    "heroku-postbuild": "ng build --prod"
   },
   "private": true,
   "dependencies": {
