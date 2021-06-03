@@ -1,13 +1,14 @@
 const express = require('express');
-const path = require('path');
 
 const app = express();
 
-app.use(express.static(__dirname + '/dist/mystore'));
+app.use(express.static('./dist/spartacus-mystore'));
 
-app.get('/*', (req,res,next) => {
-  res.sendFile(path.join(__dirname + '/dist/dictionary/index.html'));
+app.get('/*', function (req, res) {
+  res.sendFile('index.html', { root: 'dist/spartacus-mystore' }
+  );
 });
 
+app.listen(process.env.PORT || 8080);
 
-app.listen(process.env.PORT || 8000);
+console.log(`Running on port ${process.env.PORT || 8080}`)
