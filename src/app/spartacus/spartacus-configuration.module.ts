@@ -11,7 +11,7 @@ import { defaultCmsContentProviders, layoutConfig, mediaConfig } from "@spartacu
   providers: [provideConfig(layoutConfig), provideConfig(mediaConfig), ...defaultCmsContentProviders, provideConfig(<OccConfig>{
     backend: {
       occ: {
-        baseUrl: 'https://spartacus-demo.eastus.cloudapp.azure.com:8443/',
+        baseUrl: 'https://spartacus-training.eastus.cloudapp.azure.com:8443/',
       }
     },
   }), provideConfig(<SiteContextConfig>{

@@ -7,6 +7,8 @@ import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
 import {SpartacusModule} from './spartacus/spartacus.module';
 import {MyMiniCartModule} from "./my-mini-cart/my-mini-cart.module";
+import {MyCartModule} from "./my-cart/my-cart.module";
+import {MyBannerModule} from "./my-banner/my-banner.module";
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import {MyMiniCartModule} from "./my-mini-cart/my-mini-cart.module";
     EffectsModule.forRoot([]),
     SpartacusModule,
     BrowserTransferStateModule,
-    MyMiniCartModule
+    MyMiniCartModule,
+    MyCartModule,
+    MyBannerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

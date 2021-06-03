@@ -1,0 +1,4 @@
+<div *ngIf="component.data$ | async as data">
+  <p>{{ data.name }}</p>
+  <cx-media [container]="data.media"></cx-media>
+</div>
