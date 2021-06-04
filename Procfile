@@ -1,1 +1,1 @@
-web: ng serve --host 0.0.0.0
+web: ng serve --prod
