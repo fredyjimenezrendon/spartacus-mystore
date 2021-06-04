@@ -1,4 +1,9 @@
-<div *ngIf="component.data$ | async as data">
-  <p>{{ data.name }}</p>
+<cx-generic-link
+  *ngIf="data$ | async as data"
+  [url]="data.urlLink"
+  [target]="getTarget(data)"
+>
+  <p class="headline" *ngIf="data.headline" [innerHTML]="data.headline"></p>
   <cx-media [container]="data.media"></cx-media>
-</div>
+  <p class="content" *ngIf="data.content" [innerHTML]="data.content"></p>
+</cx-generic-link>

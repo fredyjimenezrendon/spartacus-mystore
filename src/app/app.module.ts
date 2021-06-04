@@ -12,6 +12,9 @@ import {MyBannerModule} from "./my-banner/my-banner.module";
 import {WeatherModule} from "./features/weather/weather.module";
 import {StoreDevtoolsModule} from "@ngrx/store-devtools";
 import {environment} from "../environments/environment";
+import {SalesDetailModule} from "./pages/sales-detail/sales-detail.module";
+import {MyLayoutModule} from "./my-layout/my-layout.module";
+import {BestSellersModule} from "./best-sellers/best-sellers.module";
 
 const devImports = [];
 if (!environment.production) {
@@ -37,6 +40,9 @@ if (!environment.production) {
     MyCartModule,
     MyBannerModule,
     WeatherModule,
+    SalesDetailModule,
+    MyLayoutModule,
+    BestSellersModule,
 
     // Dev Imports
     ...devImports,
