@@ -30,7 +30,8 @@
             "styles": [
               "src/styles.scss",
               "src/styles/spartacus/user.scss",
-              "src/styles/spartacus/cart.scss"
+              "src/styles/spartacus/cart.scss",
+              "src/styles/spartacus/storefinder.scss"
             ],
             "scripts": []
           },
@@ -96,7 +97,8 @@
             "styles": [
               "src/styles.scss",
               "src/styles/spartacus/user.scss",
-              "src/styles/spartacus/cart.scss"
+              "src/styles/spartacus/cart.scss",
+              "src/styles/spartacus/storefinder.scss"
             ],
             "scripts": []
           }

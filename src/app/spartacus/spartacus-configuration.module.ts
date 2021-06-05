@@ -18,8 +18,8 @@ import { defaultCmsContentProviders, layoutConfig, mediaConfig } from "@spartacu
     context: {
       urlParameters: ['baseSite', 'language', 'currency'],
       currency: ['USD'],
-      language: ['en'],
-      baseSite: ['electronics-spa']
+      language: ['en', 'es'],
+      baseSite: ['electronics-spa', 'powertools-spa']
     },
   }), provideConfig(<I18nConfig>{
     i18n: {
