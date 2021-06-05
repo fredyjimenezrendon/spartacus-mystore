@@ -15,6 +15,7 @@ import {environment} from "../environments/environment";
 import {SalesDetailModule} from "./pages/sales-detail/sales-detail.module";
 import {MyLayoutModule} from "./my-layout/my-layout.module";
 import {BestSellersModule} from "./best-sellers/best-sellers.module";
+import {CustomProductSummaryModule} from "./custom-product-summary/custom-product-summary.module";
 
 const devImports = [];
 if (!environment.production) {
@@ -43,6 +44,7 @@ if (!environment.production) {
     SalesDetailModule,
     MyLayoutModule,
     BestSellersModule,
+    CustomProductSummaryModule,
 
     // Dev Imports
     ...devImports,
